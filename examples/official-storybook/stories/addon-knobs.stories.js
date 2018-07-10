@@ -10,6 +10,7 @@ import {
   color,
   select,
   selectV2,
+  radioButtons,
   array,
   date,
   button,
@@ -62,7 +63,8 @@ storiesOf('Addons|Knobs.withKnobs', module)
       Coconut: 'coconut',
       Tomato: 'tomato',
     };
-    const otherFruit = selectV2('Other Fruit', otherFruits, 'lime');
+
+    const otherFruit = radioButtons('Other Fruit', otherFruits, 'lime');
     const dollars = number('Dollars', 12.5, { min: 0, max: 100, step: 0.01 });
     const years = number('Years in NY', 9);
 
